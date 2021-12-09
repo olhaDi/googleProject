@@ -3,31 +3,32 @@ package pages;
 import elements.HomePageElements;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 
-public class HomePage {
+public class HomePage extends BasePage {
     WebDriver driver;
     HomePageElements elements;
 
     public HomePage(WebDriver driver){
+        super(driver);
         this.driver=driver;
         elements = new HomePageElements(driver);
     }
 
-    public void clickSearchField(){
-        elements.searchField.click();
+    public void clickRegisterButton(){
+        elements.registerButton.click();
     }
 
-    public void enterDataToSearchField(String query){
-        elements.searchField.sendKeys(query);
-        elements.searchField.sendKeys(Keys.ENTER);
+    public void clickWhereAreYouGoingSearchField(){
+        elements.whereAreYouGoingSearchField.click();
     }
 
-    public void verifyPoshukGoogleButtonEnabled(){
-        Assert.assertTrue(elements.poshukGoogleButton.isEnabled());
+    public boolean verifySuggestedDestinationsTableIsVisible(){
+        highlightElement(elements.suggestedDestinationsTableVisible);
+        return elements.suggestedDestinationsTableVisible.isDisplayed();
     }
 
-    public void verifyLogoDisplayed(){
-        Assert.assertTrue(elements.logo.isDisplayed());
+    public void enterDestination(String destination){
+        elements.whereAreYouGoingSearchField.sendKeys(destination);
+        elements.whereAreYouGoingSearchField.sendKeys(Keys.ENTER);
     }
 }

@@ -21,7 +21,8 @@ public class BaseTest {
 //        @AfterTest
     @AfterClass
     public void afterTest() {
-        driver.close();
+//        driver.close();
     }
+
 
 }

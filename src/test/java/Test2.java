@@ -13,12 +13,12 @@ public class Test2 extends BaseTest{
 //        homePage.verifyLogoDisplayed();
 //    }
 
-    @Test
-    public void verifyPoshukGoogleButtonEnabled() {
-
-        driver.get(baseUrl);
-        homePage = new HomePage(driver);
-        homePage.verifyPoshukGoogleButtonEnabled();
-    }
+//    @Test
+//    public void verifyPoshukGoogleButtonEnabled() {
+//
+//        driver.get(baseUrl);
+//        homePage = new HomePage(driver);
+//        homePage.verifyPoshukGoogleButtonEnabled();
+//    }
 
 }
