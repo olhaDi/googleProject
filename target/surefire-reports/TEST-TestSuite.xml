@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="TestSuite" time="3.891" errors="0" skipped="0">
+<testsuite tests="2" failures="1" name="TestSuite" time="3.463" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.12+8-LTS-237"/>
@@ -28,7 +28,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\Users\odiach\Documents\Maven\apache-maven-3.8.4\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.12\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.1\bin;C:\Users\odiach\Documents\browsers;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\odiach\Documents\Maven\apache-maven-3.8.4\bin;C:\Users\odiach\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.3\bin;;C:\Users\odiach\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\odiach\Documents\Maven\apache-maven-3.8.4\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.12\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.1\bin;C:\Users\odiach\Documents\browsers;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\odiach\Documents\Maven\apache-maven-3.8.4\bin;C:\Program Files\nodejs\;C:\Users\odiach\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.3\bin;;C:\Users\odiach\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\odiach\Documents\Maven\apache-maven-3.8.4\bin;C:\Users\odiach\AppData\Roaming\npm;."/>
     <property name="maven.conf" value="C:\Users\odiach\Documents\Maven\apache-maven-3.8.4/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="55.0"/>
@@ -45,7 +45,7 @@
     <property name="java.class.path" value="C:\Users\odiach\Documents\Maven\apache-maven-3.8.4\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Psecond"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-11.0.12"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -65,7 +65,24 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Test1" name="verifyPoshukGoogleButtonEnabled" time="0.932"/>
-  <testcase classname="Test1" name="verifySearchField" time="1.591"/>
-  <testcase classname="Test2" name="verifyPoshukGoogleButtonEnabled" time="1.368"/>
+  <testcase classname="Test1" name="verifySearchField" time="1.858"/>
+  <testcase classname="VerifyTitleOnPageTest" name="verifyPageHeader" time="1.605">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at pages.BasePage.verifyPageHeader(BasePage.java:23)
+	at VerifyTitleOnPageTest.verifyPageHeader(VerifyTitleOnPageTest.java:13)
+</failure>
+    <system-err>Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 51930
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 16, 2021 11:14:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 16, 2021 11:14:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 96
+</system-err>
+  </testcase>
 </testsuite>
