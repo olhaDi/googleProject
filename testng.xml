@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="regression">
-<!--    <test name="homePageTest">-->
-<!--        <classes>-->
-<!--            <class name="Test1"/>-->
-<!--            <class name="Test2"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="homePageTest">
+        <classes>
+            <class name="VerifyDestinationSearchFieldWorks"/>
+            <class name="VerifyRegisterButton"/>
+        </classes>
+    </test>
     <test name="second">
         <classes>
-            <class name="Test2"/>
+            <class name="VerifySuggestedDestinationsTableIsVisible"/>
+            <class name="VerifyTitleOnPageTest"/>
         </classes>
     </test>
 </suite>
