@@ -1,0 +1,6 @@
+pages\BasePage.class
+elements\SignInCreateAccountPageElements.class
+elements\HomePageElements.class
+elements\BasePageElements.class
+pages\HomePage.class
+pages\SignInCreateAccountPage.class
