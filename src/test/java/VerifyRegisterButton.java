@@ -28,14 +28,12 @@ public class VerifyRegisterButton extends BaseTest{
 //            }
 //        });
 
-
-
         driver.get(baseUrl);
         homePage = new HomePage(driver);
         signInCreateAccountPage = new SignInCreateAccountPage(driver);
         homePage.clickRegisterButton();
-//        driver.navigate().forward();
         signInCreateAccountPage.verifyPageHeader("Sign in or create an account");
+        System.out.println("verifyRegisterButton");
     }
 
 }

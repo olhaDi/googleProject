@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="regression">
-    <test name="homePageTest">
+<!--    <test name="homePageTest">-->
+<!--        <classes>-->
+<!--            <class name="VerifyDestinationSearchFieldWorks"/>-->
+<!--            <class name="VerifyRegisterButton"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="second">-->
+<!--        <classes>-->
+<!--            <class name="VerifySuggestedDestinationsTableIsVisible"/>-->
+<!--            <class name="VerifyTitleOnPageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="RegressionTestSuite">
         <classes>
             <class name="VerifyDestinationSearchFieldWorks"/>
             <class name="VerifyRegisterButton"/>
-        </classes>
-    </test>
-    <test name="second">
-        <classes>
             <class name="VerifySuggestedDestinationsTableIsVisible"/>
             <class name="VerifyTitleOnPageTest"/>
         </classes>
