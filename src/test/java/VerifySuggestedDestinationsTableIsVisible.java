@@ -12,7 +12,6 @@ public class VerifySuggestedDestinationsTableIsVisible extends BaseTest{
         homePage = new HomePage(driver);
         homePage.clickWhereAreYouGoingSearchField();
         homePage.verifySuggestedDestinationsTableIsVisible();
-        System.out.println("verifySuggestedDestinationsTableIsVisible");
     }
 
 }

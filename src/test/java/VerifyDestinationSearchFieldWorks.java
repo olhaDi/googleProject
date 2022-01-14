@@ -11,7 +11,6 @@ public class VerifyDestinationSearchFieldWorks extends BaseTest {
         homePage = new HomePage(driver);
         homePage.clickWhereAreYouGoingSearchField();
         homePage.enterDestination("United States of America");
-        System.out.println("verifyDestinationSearchFieldWorks");
     }
 
 }

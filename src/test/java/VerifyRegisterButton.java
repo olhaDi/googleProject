@@ -33,7 +33,6 @@ public class VerifyRegisterButton extends BaseTest{
         signInCreateAccountPage = new SignInCreateAccountPage(driver);
         homePage.clickRegisterButton();
         signInCreateAccountPage.verifyPageHeader("Sign in or create an account");
-        System.out.println("verifyRegisterButton");
     }
 
 }

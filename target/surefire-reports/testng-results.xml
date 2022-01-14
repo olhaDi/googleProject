@@ -1,67 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-21T14:23:12 EET" name="regression" finished-at="2021-12-21T14:23:39 EET" duration-ms="26638">
+  <suite started-at="2022-01-05T10:55:35 EET" name="Surefire suite" finished-at="2022-01-05T10:55:43 EET" duration-ms="8397">
     <groups>
     </groups>
-    <test started-at="2021-12-21T14:23:12 EET" name="RegressionTestSuite" finished-at="2021-12-21T14:23:39 EET" duration-ms="26638">
-      <class name="VerifyDestinationSearchFieldWorks">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:VerifyDestinationSearchFieldWorks@7ef27d7f]" started-at="2021-12-21T14:23:12 EET" name="setUp" finished-at="2021-12-21T14:23:15 EET" duration-ms="2473" status="PASS">
+    <test started-at="2022-01-05T10:55:35 EET" name="Surefire test" finished-at="2022-01-05T10:55:43 EET" duration-ms="8397">
+      <class name="VerifyIamTravelingForWorkCheckbox">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:VerifyIamTravelingForWorkCheckbox@536dbea0]" started-at="2022-01-05T10:55:35 EET" name="setUp" finished-at="2022-01-05T10:55:37 EET" duration-ms="2466" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyDestinationSearchFieldWorks()[pri:0, instance:VerifyDestinationSearchFieldWorks@7ef27d7f]" started-at="2021-12-21T14:23:15 EET" name="verifyDestinationSearchFieldWorks" finished-at="2021-12-21T14:23:20 EET" duration-ms="5503" status="PASS">
+        <test-method signature="verifyTextOnCheckbox()[pri:0, instance:VerifyIamTravelingForWorkCheckbox@536dbea0]" started-at="2022-01-05T10:55:37 EET" name="verifyTextOnCheckbox" finished-at="2022-01-05T10:55:39 EET" duration-ms="1769" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDestinationSearchFieldWorks -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:VerifyDestinationSearchFieldWorks@7ef27d7f]" started-at="2021-12-21T14:23:20 EET" name="afterTest" finished-at="2021-12-21T14:23:20 EET" duration-ms="114" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- VerifyDestinationSearchFieldWorks -->
-      <class name="VerifyTitleOnPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:VerifyTitleOnPageTest@3b74ac8]" started-at="2021-12-21T14:23:32 EET" name="setUp" finished-at="2021-12-21T14:23:33 EET" duration-ms="1319" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyPageHeader()[pri:0, instance:VerifyTitleOnPageTest@3b74ac8]" started-at="2021-12-21T14:23:33 EET" name="verifyPageHeader" finished-at="2021-12-21T14:23:35 EET" duration-ms="1702" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageHeader -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:VerifyTitleOnPageTest@3b74ac8]" started-at="2021-12-21T14:23:35 EET" name="afterTest" finished-at="2021-12-21T14:23:39 EET" duration-ms="4119" status="PASS">
+        </test-method> <!-- verifyTextOnCheckbox -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:VerifyIamTravelingForWorkCheckbox@536dbea0]" started-at="2022-01-05T10:55:39 EET" name="afterTest" finished-at="2022-01-05T10:55:43 EET" duration-ms="4091" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- VerifyTitleOnPageTest -->
-      <class name="VerifySuggestedDestinationsTableIsVisible">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:VerifySuggestedDestinationsTableIsVisible@55cf0d14]" started-at="2021-12-21T14:23:24 EET" name="setUp" finished-at="2021-12-21T14:23:26 EET" duration-ms="1326" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifySuggestedDestinationsTableIsVisible()[pri:0, instance:VerifySuggestedDestinationsTableIsVisible@55cf0d14]" started-at="2021-12-21T14:23:26 EET" name="verifySuggestedDestinationsTableIsVisible" finished-at="2021-12-21T14:23:28 EET" duration-ms="1868" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySuggestedDestinationsTableIsVisible -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:VerifySuggestedDestinationsTableIsVisible@55cf0d14]" started-at="2021-12-21T14:23:28 EET" name="afterTest" finished-at="2021-12-21T14:23:32 EET" duration-ms="4118" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- VerifySuggestedDestinationsTableIsVisible -->
-      <class name="VerifyRegisterButton">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:VerifyRegisterButton@934b6cb]" started-at="2021-12-21T14:23:20 EET" name="setUp" finished-at="2021-12-21T14:23:22 EET" duration-ms="1337" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyRegisterButton()[pri:0, instance:VerifyRegisterButton@934b6cb]" started-at="2021-12-21T14:23:22 EET" name="verifyRegisterButton" finished-at="2021-12-21T14:23:24 EET" duration-ms="2639" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegisterButton -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:VerifyRegisterButton@934b6cb]" started-at="2021-12-21T14:23:24 EET" name="afterTest" finished-at="2021-12-21T14:23:24 EET" duration-ms="32" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- VerifyRegisterButton -->
-    </test> <!-- RegressionTestSuite -->
-  </suite> <!-- regression -->
+      </class> <!-- VerifyIamTravelingForWorkCheckbox -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

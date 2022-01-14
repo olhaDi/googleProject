@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [regression]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="RegressionTestSuite(failed)" verbose="0">
+    <classes>
+      <class name="VerifyDestinationSearchFieldWorks">
+        <methods>
+          <include name="afterTest"/>
+          <include name="setUp"/>
+          <include name="verifyDestinationSearchFieldWorks"/>
+        </methods>
+      </class> <!-- VerifyDestinationSearchFieldWorks -->
+    </classes>
+  </test> <!-- RegressionTestSuite(failed) -->
+</suite> <!-- Failed suite [regression] -->

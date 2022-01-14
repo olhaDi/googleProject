@@ -3,6 +3,7 @@ package pages;
 import elements.HomePageElements;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 public class HomePage extends BasePage {
     WebDriver driver;
@@ -30,5 +31,15 @@ public class HomePage extends BasePage {
     public void enterDestination(String destination){
         elements.whereAreYouGoingSearchField.sendKeys(destination);
         elements.whereAreYouGoingSearchField.sendKeys(Keys.ENTER);
+    }
+
+    public void verifyTextOnCheckboxIamTravelingForWork(String expectedText){
+        String actual=elements.iAmTravelingForWorkCheckboxLabel.getText();
+        Assert.assertTrue(actual.contentEquals(expectedText));
+    }
+
+    public void verifyIamTravelingForWorkCheckboxIsUnchecked(){
+        boolean actual = elements.iAmTravelingForWorkCheckbox.isSelected();
+        Assert.assertFalse(actual);
     }
 }
